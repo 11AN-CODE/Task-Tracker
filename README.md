@@ -1,7 +1,7 @@
-📝 Task Tracker Dashboard
+ ##📝 Task Tracker Dashboard
 A full-stack web application built with Node.js and Express that allows authenticated users to manage their personal To-Do lists. Users can register, log in, create tasks, and track their status.
 
-✨ Features
+##✨ Features
 User Authentication: Secure registration and login using JWT (JSON Web Tokens) and bcrypt for password hashing.
 
 Task Management: Users can create, view, and organize tasks.
