@@ -11,3 +11,16 @@ Personalized Dashboard: Users only see tasks linked to their unique user ID.
 Status Tracking: Tasks include a customizable status (Pending, Completed, In Progress).
 
 Dynamic UI: Uses EJS (Embedded JavaScript) for server-side rendering and Tailwind CSS for styling.
+
+
+
+## 🛠️ Tech Stack
+Backend: Node.js, Express.js
+
+Database: MongoDB (via Mongoose ODM)
+
+Authentication: JWT, bcrypt
+
+Templating: EJS
+
+Styling: Tailwind CSS (via CDN)
