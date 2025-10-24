@@ -24,3 +24,13 @@ Authentication: JWT, bcrypt
 Templating: EJS
 
 Styling: Tailwind CSS (via CDN)
+
+## 🚀 Setup and Installation
+Follow these steps to get a local copy of the project running.
+
+Prerequisites
+You need the following installed:
+
+Node.js (v18+)
+
+MongoDB (local instance or cloud service like MongoDB Atlas)
