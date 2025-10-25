@@ -41,8 +41,7 @@ Clone the Repository:
 
 Bash
 
-git clone https://github.com/11AN-CODE/Weather_API.git  # Replace with the correct task tracker repo URL
-cd Weather_API
+git clone https://github.com/11AN-CODE/Task-Tracker
 Install Dependencies:
 
 Bash
