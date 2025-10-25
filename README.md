@@ -2,7 +2,9 @@
 A full-stack web application built with Node.js and Express that allows authenticated users to manage their personal To-Do lists. Users can register, log in, create tasks, and track their status.
 
 ## ✨ Features
-User Authentication: Secure registration and login using JWT (JSON Web Tokens) and bcrypt for password hashing.
+Secure Authentication: User registration and login handled with JWTs (JSON Web Tokens) for session management and bcrypt for secure password hashing.
+
+User Isolation: Tasks are linked to the unique user ID (req.userid), ensuring users only see their own data.
 
 Task Management: Users can create, view, and organize tasks.
 
@@ -47,3 +49,6 @@ Install Dependencies:
 Bash
 
 npm install
+
+
+
