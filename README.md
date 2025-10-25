@@ -34,3 +34,17 @@ You need the following installed:
 Node.js (v18+)
 
 MongoDB (local instance or cloud service like MongoDB Atlas)
+
+
+Steps
+Clone the Repository:
+
+Bash
+
+git clone https://github.com/11AN-CODE/Weather_API.git  # Replace with the correct task tracker repo URL
+cd Weather_API
+Install Dependencies:
+
+Bash
+
+npm install
