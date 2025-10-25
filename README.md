@@ -49,6 +49,8 @@ require('dotenv').config();
 
 2. Implementation in Code
 Update your application code to use process.env.<VARIABLE_NAME> instead of hardcoded values:
+<img width="485" height="176" alt="image" src="https://github.com/user-attachments/assets/635877ba-4966-4dc8-9d1f-f59142497290" />
+
 
 
 
