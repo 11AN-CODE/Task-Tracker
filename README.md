@@ -15,7 +15,6 @@ Status Tracking: Tasks include a customizable status (Pending, Completed, In Pro
 Dynamic UI: Uses EJS (Embedded JavaScript) for server-side rendering and Tailwind CSS for styling.
 
 
-
 ## 🛠️ Tech Stack
 Backend: Node.js, Express.js
 
@@ -26,6 +25,30 @@ Authentication: JWT, bcrypt
 Templating: EJS
 
 Styling: Tailwind CSS (via CDN)
+
+
+## 🔒 Security Configuration
+To prevent the leakage of sensitive information (database credentials and secret keys), this project requires environment variables.
+
+1. Installation and Usage
+Install dotenv: You should install a package like dotenv to load variables from a .env file:
+
+Bash
+
+npm install dotenv
+Create .env File: Create a file named .env in your project root:
+
+ .env
+Update .gitignore: Ensure your .gitignore file contains the line .env to prevent the file from being accidentally uploaded to GitHub.
+
+Load Variables in index.js: Add the following to the very top of your main application file (index.js):
+
+JavaScript
+
+require('dotenv').config();
+
+
+
 
 ## 🚀 Setup and Installation
 Follow these steps to get a local copy of the project running.
