@@ -47,6 +47,8 @@ JavaScript
 
 require('dotenv').config();
 
+2. Implementation in Code
+Update your application code to use process.env.<VARIABLE_NAME> instead of hardcoded values:
 
 
 
