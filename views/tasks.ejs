@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+    <h1 class="text-3xl text-blue-400"> Hi <%=user.name %> - Task Management Dashboard </h1>
+    <a href="/logout">Logout</a>
+
+    <form action="/createTask" method="post">
+        <div class="w-150 p-2 m-4 flex-col space-y-2">
+            <input class="text-2xl border-2 border-orange-200 rounded-md m-4 p-2" type="text" name="title" placeholder="Enter Task Title">
+            <input class="text-2xl border-2 border-orange-200 rounded-md m-4 p-2" type="text" name="description" placeholder="Enter Task Description">
+            <label for="status">Status:</label>
+    <select name="status" id="status">
+        <option value="pending">Pending</option>
+        <option value="completed">Completed</option>
+        <option value="in_progress">In Progress</option>
+    </select>
+        </div>
+        <div class="w-100 flex-col space-y-2 m-4 p-2">
+            <button class="text-2xl border-2 bg-orange-400 text-white border-orange-800 rounded-md p-2" type="submit">Add Task</button>
+        </div>
+    </form>
+
+    <hr class="my-4">
+
+    <h2>Your Tasks:</h2>
+    
+   <% if (tasks.length === 0) { %>
+    <p class="text-2xl text-red-400">No tasks found. Please add a task.</p> 
+<% } else { %>
+    
+    <ul>
+        <% tasks.forEach(function(task) { %>
+            <li class="border-2 border-blue-200 rounded-md m-4 p-4">
+                <h3 class="text-2xl font-bold"><%= task.title %> [<%= task.status %>]</h3>
+                
+                <p class="text-xl"><%= task.description %></p>
+
+            </li>
+        <% }) %>
+    </ul>
+    
+<% } %>
+    
+
+</body>
+</html>
